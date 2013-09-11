@@ -1,0 +1,13 @@
+#!/bin/sh
+
+GZ_VER="0.8.7"
+
+if [ ! -f "/tmp/gptfdisk-${GZ_VER}.tar.gz" ]; then
+  wget "http://downloads.sourceforge.net/project/gptfdisk/gptfdisk/${GZ_VER}/gptfdisk-${GZ_VER}.tar.gz" -O "/tmp/gptfdisk-${GZ_VER}.tar.gz"
+fi
+
+if [ ! -d "/tmp/gdisk" ]; then
+  cd /tmp
+  tar -xf "gptfdisk-${GZ_VER}.tar.gz"
+  mv "gptfdisk-${GZ_VER}" gdisk
+fi
