@@ -2,7 +2,7 @@ Building
 ========
 
 Install build deps:
-    tce-load -wi icu49-dev popt-dev ncurses-dev
+    tce-load -wi icu-dev popt-dev ncurses-dev
 
 Write something sensible to /opt/.tce_dir. Try the following for default
 tinycore usage:
